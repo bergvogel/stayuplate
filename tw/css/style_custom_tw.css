@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+.metric
+{
+position: absolute;
+right: 0;
+}
+
+.menu {
+	width: 100%;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+}

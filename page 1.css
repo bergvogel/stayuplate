@@ -1,0 +1,95 @@
+.primaryContainer {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+#box {
+    float: left;
+    height: 100%;
+    clear: none;
+    width: 50%;
+    background-color: rgb(242, 255, 0);
+    position: absolute;
+    top: 0px;
+    left: 0%;
+    right: auto;
+    bottom: auto;
+}
+
+#image1 {
+    float: left;
+    width: 50.860868%;
+    max-width: none;
+    height: 229.6875px;
+    clear: none;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 251px;
+    left: 24.243631%;
+}
+
+#image {
+    float: left;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    clear: none;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 132.375px;
+    left: 18.725119%;
+    z-index: 2;
+}
+
+#image2 {
+    float: left;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    clear: both;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 591px;
+    left: 26.436438%;
+}
+
+#image3 {
+    float: left;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin-left: 69.921046%;
+    margin-top: 132.375px;
+    clear: none;
+    color: rgb(0, 0, 0);
+    margin-right: 0%;
+}
+
+#image5 {
+    float: left;
+    width: 19.426752%;
+    max-width: none;
+    height: 514.625px;
+    clear: both;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 214.3125px;
+    left: 73.100783%;
+}
+
+#image4 {
+    float: left;
+    width: 21.141023%;
+    max-width: none;
+    height: 357.1875px;
+    clear: both;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 220px;
+    left: 52.801553%;
+}
+
