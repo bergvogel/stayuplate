@@ -1,0 +1,21 @@
+{
+    "name": "stauplate",
+    "description": "",
+    "keywords": ["","",""],
+    "homepage": "http://www.stauplate.nl/",
+    "license": "GPL-2.0+",
+    "authors": [
+        {
+            "name": "Hilbert Kruidenier"
+        }
+    ],
+    "support": {
+        
+    },
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "require-dev": {
+        
+    }
+}
