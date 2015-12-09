@@ -1,0 +1,20 @@
+// _main.scss
+
+    #main {
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    position: relative;
+    }
+
+
+.overlay_transition {
+	width: 20%;
+	height: 100%;
+	background-color: $brand-color;
+	position: absolute;
+	left:20%;
+	top: 0;
+	z-index:5000;
+}

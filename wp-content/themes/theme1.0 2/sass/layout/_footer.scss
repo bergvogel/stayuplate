@@ -1,0 +1,19 @@
+// _footer.scss
+
+#footer {
+    height: 60px;
+    width: 100%;
+    position: relative;
+    z-index: 2000;
+}
+
+#footer p {
+    font-family: 'berliner_grotesk_d_otlight';
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: .8em;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,375 @@
+// _header.scss
+
+#header {
+    z-index: 1000;
+    height:100%;
+    background-color: $black;
+    float: left;
+    clear: both;
+    width: 19%;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    transition: all .2s ease-in-out;
+}
+
+
+#topmenu_overlay {
+    height: 100%;
+    width: 100%;
+    top:0;
+    left: 0;
+    background: #000;
+    position: absolute;
+    z-index: 10000;
+      display: flex;   
+    align-items: center;
+}
+
+#topmenu_overlay ul  {
+    margin: 0 auto;
+    list-style: none;
+    text-align: center;
+    font-size: 15px;
+    font-family: $primary_font;
+    text-transform: uppercase;
+}
+
+#topmenu_overlay ul li a {
+color: #fff;
+}
+.close_menu {
+    position: absolute;
+    top: 1px;
+    right: 2px;
+    width: 6%;
+}
+#headercontent {
+    height: 100%;
+    display: flex;   
+    align-items: center;
+
+}
+
+#nextevent {
+    height: auto;
+    width: 100%;
+    position:relative;
+    left: 0%;
+}
+
+.lineup {
+    font-family: "neuzeit_condenced";
+    width: 90%;
+    left: 7%;
+    position: relative;
+}
+
+.lineup ul li{
+     line-height: 1.45;
+    list-style: none;
+}
+
+.minus60 {
+     height:  calc(20% - 30px) !important;
+}
+
+#topmenu {
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    // transition: 1s ease;
+    left: -100%;
+    background-color: $white;
+    // z-index: 20;
+        display: flex;   
+    align-items: center;
+    border: 7px;
+    border-right: 0px;
+    border-color:#000;
+    border-style: solid;
+    z-index: 100000;
+}
+
+
+#topmenu ul li a{
+    color: $black;
+    font-family: $primary_font;
+    text-transform: uppercase;  
+    float: left;
+    clear: left;
+    transition: all 0.3s ease-in-out;
+}
+
+#topmenu ul li a:hover {
+transform: translate3d(3px, 2px, 0);
+
+}
+
+#topmenu ul li {
+    width: 100%;
+}
+
+#topmenu a:hover{
+   text-decoration: underline;
+    transition: all .3s ease-in-out;
+ 
+}
+
+#topmenu ul{
+margin: 0 3px 0 7%;
+    list-style: none;
+  
+}
+
+#menu_link {
+    float: left;
+    font-size: 1.3em;
+    width: auto;
+    height: auto;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1em;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: none;
+    min-height: 0px;
+    color: $brand-color;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    overflow-y: visible;
+    overflow-x: visible;
+    display: block;
+}
+
+
+#menu_link:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+ .topmenu ul li {
+
+    width: 100%;
+}
+
+ #toggle-menu {
+    display: block;
+    width: 15px;
+    height: 15px;
+    padding: 20px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 5555555;
+
+}
+
+
+#toggle-menu div {
+    width: 20px;
+    height: 15px;
+    position: relative;
+    cursor: pointer;
+}
+#toggle-menu span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: $white;
+    position: absolute;
+ 
+    animation-fill-mode: forwards;
+}
+#toggle-menu span.top {
+    top: 0px;
+}
+#toggle-menu span.middle {
+    top: 8px;
+}
+#toggle-menu span.bottom {
+    top: 16px;
+}
+
+#toggle-menu:hover span.top {
+    top: -2px;
+    transition: all 0.2s ease-in-out;
+}
+
+#toggle-menu:hover span.bottom {
+    top: 18px;
+    transition: all 0.2s ease-in-out;
+}
+
+#toggle-menu.visible span.top {
+       background: $black;
+    transition: all 0.2s ease-in-out;
+
+    animation: inTop 0.8s forwards;
+}
+#toggle-menu.visible span.middle {
+         background: $black;
+    transition: all 0.2s ease-in-out;
+
+    animation: inMiddle 0.8s forwards;
+}
+#toggle-menu.visible span.bottom {
+          background: $black;
+    transition: all 0.2s ease-in-out;
+
+    animation: inBottom 0.8s forwards;
+}   
+#toggle-menu.hidden span.top {
+          background: $white;
+    transition: all 0.2s ease-in-out;
+
+    animation: outTop 0.8s backwards;
+    animation-direction: reverse;
+}
+#toggle-menu.hidden span.middle {
+             background: $white;
+    transition: all 0.2s ease-in-out;
+
+    animation: outMiddle 0.8s backwards;
+    animation-direction: reverse;
+}
+#toggle-menu.hidden span.bottom {
+             background: $white;
+    transition: all 0.2s ease-in-out;
+
+    animation: outBottom 0.8s backwards;
+    animation-direction: reverse;
+}   
+
+#toggle-menu_footer {
+     width: 20px;
+    height: 15px;
+    position: relative;
+    display: none;
+    margin: 9px auto;
+    left: -7%;
+    top: 3%;
+    }
+    
+#toggle-menu_footer span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: $white;
+    position: absolute;
+    animation-fill-mode: forwards;
+}
+#toggle-menu_footer span.top {
+    top: 0px;
+}
+#toggle-menu_footer span.middle {
+    top: 6px;
+}
+#toggle-menu_footer span.bottom {
+    top: 12px;
+}
+
+
+
+
+
+
+
+@keyframes inMiddle {
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+
+
+@keyframes outMiddle {
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+
+
+@keyframes inTop {
+    0% {
+        top: 0;
+    }
+    50% {
+        top: 8px;
+        transform: rotate(0deg);
+    }
+    100% {
+        top: 8px;
+        transform: rotate(135deg);
+    }
+}
+
+
+
+@keyframes outTop {
+    0% {
+        top: 0;
+    }
+    50% {
+        top: 8px;
+        transform: rotate(0deg);
+    }
+    100% {
+        top: 8px;
+        transform: rotate(135deg);
+    }
+}
+
+
+@keyframes inBottom {
+    0% {
+        top: 12px;
+    }
+    50% {
+        top: 8px;
+        transform: rotate(0deg);
+    }
+    100% {
+        top: 8px;
+        transform: rotate(135deg);
+    }
+}
+
+@keyframes outBottom {
+    0% {
+        top: 12px;
+    }
+    50% {
+        top: 8px;
+        transform: rotate(0deg);
+    }
+    100% {
+        top: 8px;
+        transform: rotate(135deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

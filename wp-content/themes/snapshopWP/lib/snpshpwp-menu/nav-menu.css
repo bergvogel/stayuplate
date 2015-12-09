@@ -1,0 +1,16 @@
+#post-body-content ul li .snpshpwp_menu_item_bg {
+	display:none;
+}
+#post-body-content ul li.menu-item-depth-0 .snpshpwp_menu_item_bg {
+	display:block;
+}
+#post-body-content .snpshpwp_menu_item_bg_pos {
+	margin-right:0;
+}
+#post-body-content .snpshpwp_menu_item_bg,
+#post-body-content .snpshpwp_menu_item_bg_pos {
+	height:80px;
+}
+#post-body-content .snpshpwp_menu_item_bg_pos select {
+	width: 100%;
+}

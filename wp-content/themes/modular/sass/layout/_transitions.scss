@@ -1,0 +1,107 @@
+// _transition.scss
+
+.hidden {
+    display: none;
+}
+.visible {
+    display: block;
+}
+
+
+.delete {
+    display: none;
+    transition: all 0.25s ease 50ms !important; 
+}
+
+.fullright {
+    left: 100%;
+    transition: all 0.25s ease 50ms !important; 
+}
+
+
+.hover {
+    opacity: 0.6;
+    color: #00c!important;
+    background-color: #00c;  
+    transition: all 0.25s ease 50ms !important; 
+}
+
+.box:hover {
+    box-shadow: 0px 0px 100px $black;
+    border: 7px solid #000 !important;
+    transform: scale(1.04)!important;
+    transform: translate3d(0, 0, 9%)!important;
+    transition: all 0.3s ease 50ms !important; 
+}
+
+
+
+
+      /*scale out onload*/
+
+@keyframes show_slide {
+    from {
+      transform-origin: left;
+      transform: scaleX(0);
+    }
+    100% {
+      transform-origin: left;
+      transform: scaleX(1);
+    }
+}
+
+.show_slide { animation: show_slide 2s; }
+
+
+
+@keyframes menu_item_slide_out {
+  0% { 
+    transform: translate3d(0%, 0, 0);
+  }
+
+  100% { 
+    transform: translate3d(110%, 0, 0);
+
+}
+}
+@keyframes menu_item_slide_in {
+  0% { 
+    transform: translate3d(110%, 0, 0);
+  }
+
+  100% { 
+    transform: translate3d(0%, 0, 0);
+
+}
+}
+
+
+.menu_item_slide_out li {
+  animation:menu_item_slide_out;
+    transition-timing-function: cubic-bezier(0.64, 0.57, -0.67, 1.53);
+    animation-fill-mode:forwards;
+    animation-duration: 0.2s;
+}
+
+  @for $i from 2 to 16 {
+  .menu_item_slide_out li:nth-child(#{$i}) { animation-delay: $i * 0.04s; }
+}
+
+.menu_item_slide_in li {
+  animation:menu_item_slide_in;
+    transition-timing-function: cubic-bezier(0.64, 0.57, -0.67, 1.53);
+    animation-fill-mode:forwards;
+    animation-duration: 0.5s;
+    animation-delay: 0.7s;
+}
+
+  @for $i from 1 to 16 {
+  .menu_item_slide_in li:nth-child(#{$i}) { animation-delay: -$i * 0.04s; }
+}
+
+
+
+
+
+
+
