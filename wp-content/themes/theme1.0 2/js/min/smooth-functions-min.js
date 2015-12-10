@@ -1,0 +1,1 @@
+$(function(){"use strict";var t=$("#main"),n={onStart:{duration:300,render:function(t){t.addClass("is-exiting"),a.restartCSSAnimations()}},onReady:{duration:0,render:function(t,n){t.removeClass("is-exiting"),t.html(n)}}},a=t.smoothState(n).data("smoothState")});

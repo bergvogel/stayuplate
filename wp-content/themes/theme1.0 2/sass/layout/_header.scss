@@ -1,0 +1,175 @@
+// _header.scss
+
+#header {
+    z-index: 1000;
+    height:100%;
+    background-color: $black;
+    display: flex;   
+    align-items: center;
+    float: left;
+    clear: both;
+    width: 19%;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    transition: all .2s ease-in-out;
+}
+
+
+#instagram {
+    float: right;
+    width: auto;
+    height: auto;
+    position: static;
+    top: 0px;
+    left: 0px;
+}
+
+#fb {
+    float: left;
+    width: auto;
+    height: auto;
+    position: static;
+}
+
+#social_wrapper {
+    float: right;
+    position: absolute;
+    top: 45%;
+    right: 4%;
+}
+
+#fb:hover {
+    opacity: 0.7;
+}
+
+#instagram:hover {
+    opacity: 0.7;
+}
+
+.minus60 {
+     height:  calc(20% - 30px) !important;
+}
+
+#topmenu {
+    height: 30px;
+    margin-left: 0px;
+    margin-top: 0px;
+    clear: none;
+    width: 100%;
+    position: relative;
+    top: 0px;
+    display: none;
+    bottom: auto;
+    left: 0px;
+    right: auto;
+    background-color: $brand-light;
+    z-index: 20;
+}
+
+#topmenu li a{
+    color: $black;
+    font-family: 'berliner_grotesk_d_otlight';
+    text-transform: uppercase;  
+    float: left;
+    margin-left: 30px;
+    font-size: 1.2em;
+}
+
+#topmenu a:hover{
+   text-decoration: underline;
+ 
+}
+
+#topmenu ul{
+      margin: 0 auto;
+    list-style: none;
+      justify-content: center;
+   align-items: center;
+       position: flex;
+}
+
+#menu_link {
+    float: left;
+    font-size: 1.3em;
+    width: auto;
+    height: auto;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1em;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: none;
+    min-height: 0px;
+    color: $brand-color;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    overflow-y: visible;
+    overflow-x: visible;
+    display: block;
+}
+
+
+#menu_link:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+  #stoofpot_logo {
+        width: auto;
+        height: 80%;
+        margin: 0 auto;
+        position: relative;
+       }
+
+
+      #hamburger_menu {
+          top: 45%;
+            left: 4%;
+            bottom: auto;
+            position: absolute;
+    }
+
+    .hamburger_line1 {
+    float: left;
+    height: 2px;
+    margin-left: 0px;
+    margin-top: 6px;
+    clear: left;
+    width: 32px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    background-color: $white;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+#hamburger_line {
+    float: left;
+    height: 2px;
+    margin-left: 0px;
+    margin-top: 0px;
+    clear: left;
+    width: 32px;
+    display: block;
+    visibility: visible;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    background-color: $white;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+
+

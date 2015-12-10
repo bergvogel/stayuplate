@@ -1,0 +1,86 @@
+// _slides.scss
+
+
+#slide_wrapper {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+
+.swiper-slide {
+        background-color: $black-light;
+}
+
+#box {
+    background: #fff;
+    float: left;
+    height: 33.33%;
+    position: relative;
+    width: 19%;
+    border: 5px solid #000;
+}
+
+.center-v {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#slide_wrapper .center ul {
+    list-style: none;
+}
+#slide_wrapper .center li{
+   margin-bottom:50px; 
+}
+
+#prog_wrapper_page {
+    height: 90%;
+    margin: 73px auto;
+    width: 90%;
+    padding: 0 43px;
+}
+
+#prog_wrapper_full {
+    height: 90%;
+    margin: 50px auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* Or do it all in one line with flex flow */
+    flex-flow: row wrap;
+
+}
+
+.intro {
+    font-size: 1em;
+    column-gap: 50px;
+    column-count: 3;
+    text-align: left;
+    margin: 50px;
+}
+
+
+
+
+.button {
+    padding: 14px 30px;
+    border: 2px solid $white;
+    font-size: 2em;
+    background-color: transparent;
+    clear: both;
+}
+
+.button:hover {
+    padding: 14px 30px;
+    background-color: $secondary-color;
+    color: $white;
+    border: 2px solid $white;
+}
+
+

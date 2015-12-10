@@ -1,0 +1,310 @@
+/*------------------------------------------------------------------
+[Snapshop Reset]
+
+[Table of contents]
+
+1. Snapshop Reset
+2. Snapshop Default Classes
+3. Snapshop Default Margins
+-------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+[Snapshop Reset]
+-------------------------------------------------------------------*/
+
+body {
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	vertical-align:baseline;
+	font-size:14px;
+	line-height:28px;
+	font-weight:normal;
+}
+html, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font:inherit;
+	vertical-align:baseline;
+	}
+a,
+a:hover,
+a:visited,
+a:focus {
+	text-decoration:none;
+}
+strong {
+	font-weight:bold;
+}
+em {
+	font-style:italic;
+}
+small {
+	font-size:75%;
+}
+blockquote {
+	border-top:1px solid transparent;
+	border-bottom:1px solid transparent;
+	padding:10px 0; margin:0;
+	margin-bottom:36px;
+}
+blockquote cite {
+	display:block;
+	margin-top:20px;
+}
+blockquote p:last-child {
+	margin-bottom:0;
+}
+ol, ul {
+	margin:16px 0;
+	padding:0 0 0 20px;
+}
+ul {
+	list-style-type:disc;
+}
+nav ul,nav ol,aside ul,aside ol,
+.comments_wrapper li,
+ul.comments_wrapper,
+.comments_wrapper ol {
+	margin:0;
+	padding:0;
+	list-style:none;
+	list-style-image:none;
+}
+li > ul, li > ol {
+	margin:0;
+}
+dl {
+	margin:0;
+}
+dt {
+	font-weight:bold;
+	text-decoration:underline''
+}
+dd {
+	margin:0 0 20px;
+}
+abbr[title] {
+	border-bottom:1px dotted;
+}
+pre,code,tt {
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	-ms-border-radius:3px;
+	-o-border-radius:3px;
+	border-radius:3px;
+	font:0.8em 'Andale Mono', 'Lucida Console', monospace;
+	background:#f2f2f2;
+	border:1px solid #e6e6e6;
+	color:#888;
+	padding:2px 4px;
+}
+pre {
+	white-space:pre;
+	word-wrap:break-word;
+	overflow-x:scroll;
+	overflow:hidden;
+	margin-bottom:36px;
+}
+table {
+	border-bottom:1px solid #ededed;
+	border-collapse:collapse;
+	border-spacing:0;
+	line-height:2;
+	margin:0 0 20px;
+	width:100%;
+}
+caption,th,td {
+	text-align:left;
+}
+caption {
+	margin:20px 0;
+}
+td {
+	border-top:1px solid transparent;
+	padding:6px 10px 6px 0;
+}
+tr.odd {
+	background:#f4f4f4;
+}
+p {
+	margin-bottom:36px;
+}
+p:empty {
+	margin-bottom:0;
+}
+textarea, input[type="text"], input[type="password"],
+input[type="datetime"], input[type="datetime-local"],
+input[type="date"], input[type="month"], input[type="time"],
+input[type="week"], input[type="number"], input[type="email"],
+input[type="url"], input[type="search"], input[type="tel"],
+input[type="color"], .uneditable-input {
+	border-width:1px;border-style:solid;
+}
+ul, ol{
+	margin-bottom:30px;
+}
+ul ul, ol ol{
+	margin-bottom:0px;
+}
+label, select, button,
+input[type="button"],input[type="reset"],
+input[type="submit"], input[type="radio"],
+input[type="checkbox"] {
+	cursor:pointer;
+}
+::-webkit-input-placeholder, :-moz-placeholder,
+::-moz-placeholder, :-ms-input-placeholder {
+	color:inherit;
+}
+input, textarea, select {
+	font-family:inherit;
+	font-weight:inherit;
+	-moz-appearance:none;
+	text-indent:0.01px;
+	text-overflow:'';
+}
+header, nav, section, article,
+aside, footer, video, audio {
+	display:block;
+}
+input, select, button, textarea {
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	border-radius:0;
+	outline:none;
+	border:0;
+	padding:10px 24px;
+	margin:0;
+	line-height:28px;
+}
+input[type="text"],
+textarea {
+	border-width:1px;
+	border-style:solid;
+}
+input[type="submit"],
+button {
+	transition:all 100ms;
+}
+input.snpshpwp_button {
+	width:auto;
+}
+h1, h2, h3, h4, h5, h6 {
+	line-height:1.45;
+}
+h1.snpshpwp_page_title {
+	margin-bottom:48px;
+}
+video {
+	background:#111;
+}
+
+
+/*------------------------------------------------------------------
+[Snapshop Default Classes]
+-------------------------------------------------------------------*/
+
+.border-box {-ms-box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;}
+.halfwidth {width:50%; display:block;}
+.fullwidth {width:100%; display:block;}
+.fullmaxwidth {display:block; max-width:100%;}
+.list_style {list-style:none;}
+.relative {position:relative;}
+.margin0 {margin:0;}
+.padding0 {padding:0;}
+.block {display:block;}
+.inline {display:inline;}
+.inline-block {display:inline-block;}
+.float_left {float:left !important;}
+.float_right {float:right !important;}
+.bold {font-weight:600;}
+.text-center {text-align:center;}
+.text-left {text-align:left;}
+.text-right {text-align:right;}
+.a-inherit {color:inherit;}
+.a-inherit > a {color:inherit;}
+.a-inherit li > a {color:inherit;}
+.uppercase {text-transform:uppercase;}
+.bold_font {font-weight:bold;}
+.overflow_ellipsis {text-overflow:ellipsis;display:block;white-space:nowrap;overflow:hidden;}
+
+
+/*------------------------------------------------------------------
+[Snapshop Default Margins]
+-------------------------------------------------------------------*/
+
+.margin-bottom5 {margin-bottom:5px !important;}
+.margin-top5 {margin-top:5px !important;}
+.margin-left5 {margin-left:5px !important;}
+.margin-right5 {margin-right:5px !important;}
+.margin-bottom10 {margin-bottom:10px !important;}
+.margin-top10 {margin-top:10px !important;}
+.margin-left10 {margin-left:10px !important;}
+.margin-right10 {margin-right:10px !important;}
+.margin-bottom15 {margin-bottom:15px !important;}
+.margin-top15 {margin-top:15px !important;}
+.margin-left15 {margin-left:15px !important;}
+.margin-right15 {margin-right:15px !important;}
+.margin-bottom20 {margin-bottom:20px !important;}
+.margin-top20 {margin-top:20px !important;}
+.margin-left20 {margin-left:20px !important;}
+.margin-right20 {margin-right:20px !important;}
+.margin-bottom30 {margin-bottom:30px !important;}
+.margin-top30 {margin-top:30px !important;}
+.margin-left30 {margin-left:30px !important;}
+.margin-right30 {margin-right:30px !important;}
+.margin-bottom40 {margin-bottom:40px !important;}
+.margin-top40 {margin-top:40px !important;}
+.margin-left40 {margin-left:40px !important;}
+.margin-right40 {margin-right:40px !important;}
+.margin-bottom36 {margin-bottom:36px !important;}
+.margin-top36 {margin-top:36px !important;}
+.margin-left36 {margin-left:36px !important;}
+.margin-right36 {margin-right:36px !important;}
+.margin-bottom48 {margin-bottom:48px !important;}
+.margin-top48 {margin-top:48px !important;}
+.margin-left48 {margin-left:48px !important;}
+.margin-right48 {margin-right:48px !important;}
+.margin-bottom64 {margin-bottom:64px !important;}
+.margin-top64 {margin-top:64px !important;}
+.margin-left64 {margin-left:64px !important;}
+.margin-right64 {margin-right:64px !important;}
+.margin-bottom24 {margin-bottom:24px !important;}
+.margin-top24 {margin-top:24px !important;}
+.margin-left24 {margin-left:24px !important;}
+.margin-right24 {margin-right:24px !important;}
+.margin-bottom18 {margin-bottom:18px !important;}
+.margin-top18 {margin-top:18px !important;}
+.margin-left18 {margin-left:18px !important;}
+.margin-right18 {margin-right:18px !important;}
+.margin-bottom12 {margin-bottom:12px !important;}
+.margin-top12 {margin-top:12px !important;}
+.margin-left12 {margin-left:12px !important;}
+.margin-right12 {margin-right:12px !important;}
+.margin-bottom9 {margin-bottom:9px !important;}
+.margin-top9 {margin-top:9px !important;}
+.margin-left9 {margin-left:9px !important;}
+.margin-right9 {margin-right:9px !important;}
+.margin-bottom6 {margin-bottom:6px !important;}
+.margin-top6 {margin-top:6px !important;}
+.margin-left6 {margin-left:6px !important;}
+.margin-right6 {margin-right:6px !important;}

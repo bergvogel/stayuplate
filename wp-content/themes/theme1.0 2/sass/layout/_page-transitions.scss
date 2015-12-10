@@ -1,0 +1,65 @@
+// _page-transitions.scss
+
+
+/* keyframes transitions*/
+
+@keyframes ScaleDown {
+  0% { opacity: 0; transform: translate3d(100%, 0, 0); }
+  100% { opacity: 1; transform: none; }
+}
+
+
+@keyframes Slideright {
+  0% { 
+transform: translate3d(100%, 0, 40px);
+
+  }
+  100% { 
+    transform: translate3d(0%, 0, 0);
+}
+}
+
+.swiper-container {
+  animation-duration: .3s;
+  animation-fill-mode: both;
+}
+
+.m-scene .Slideright {
+  animation-name:Slideright;
+ }
+  
+.m-scene.is-exiting .swiper-container {
+  animation-direction: alternate-reverse;
+}
+
+@keyframes overlay_transition {
+  0% { 
+left: -20%;
+  }
+  100% { 
+   left: 120%;
+}
+}
+
+
+
+.m-scene {
+  .overlay_transition {
+    animation-duration: .3s;
+    animation-fill-mode: both;
+
+  }
+
+  .rolloverlay {
+    animation-name: overlay_transition;
+  }
+
+
+
+  /** Reverse "exit" animations */
+  &.is-exiting {
+      .overlay_transition {
+        animation-direction: alternate-reverse;
+      }
+  }
+}

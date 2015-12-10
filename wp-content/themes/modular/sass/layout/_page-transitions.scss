@@ -1,0 +1,74 @@
+// _page-transitions.scss
+
+
+/* keyframes transitions*/
+
+@keyframes ScaleDown {
+  0% { opacity: 0; transform: translate3d(100%, 0, 0); }
+  100% { opacity: 1; transform: none; }
+}
+
+
+@keyframes Slideup {
+  0% { 
+transform: translate3d(0, -100%, 40px);
+
+  }
+  100% { 
+    transform: translate3d(0, 0%, 0);
+}
+}
+
+.swiper-container {
+  animation-duration:.2s;
+  animation-fill-mode: both;
+}
+
+.m-scene .Slideup {
+  animation-name:Slideup;
+ }
+  
+.m-scene.is-exiting .swiper-container {
+  animation-direction: alternate-reverse;
+}
+
+@keyframes Slidedown {
+  0% { 
+transform: translate3d(0, 100%, 0);
+
+  }
+  100% { 
+    transform: translate3d(0, 0%, 0);
+}
+}
+
+.swiper-container {
+  animation-duration:.2s;
+  animation-fill-mode: both;
+}
+
+.m-scene .Slidedown {
+  animation-name:Slidedown;
+  animation-duration:.2s;
+  animation-fill-mode: both;
+ }
+  
+.m-scene.is-exiting .swiper-container {
+  animation-direction: alternate-reverse;
+}
+
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-30px);}
+    60% {transform: translateY(-15px);}
+} 
+ 
+
+
+#arrowdown {
+    animation:bounce ease-in 1;
+    animation-fill-mode:forwards;
+    animation-duration: 0.9s;
+}
+

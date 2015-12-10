@@ -1,0 +1,18 @@
+.swiper-wrapper {
+    -webkit-transition-property: -webkit-transform, left, top;
+    -moz-transition-property: -moz-transform, left, top;
+    transition-property: transform, left, top;
+    -webkit-transition-duration: 0s;
+    -moz-transition-duration: 0s;
+    transition-duration: 0s;
+    -webkit-transition-timing-function: ease;
+    -moz-transition-timing-function: ease;
+    transition-timing-function: ease;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    position: relative;
+    height: 100%;
+}

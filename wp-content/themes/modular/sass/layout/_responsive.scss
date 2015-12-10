@@ -1,0 +1,129 @@
+// _responsive.scss
+
+// ipad portrait
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) { 
+
+    .box {
+        width: calc(100%/3);
+        height: 25%;
+}
+ 
+ }
+
+// iphone 6 plus portrait
+@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px) 
+and (orientation : portrait) { 
+
+    .box {
+        width: calc(100%/3);
+        height: 20%;
+        }
+
+.box:nth-child(15) {
+    display: block;
+}
+.box:nth-child(14) {
+    display: block;
+} 
+.box:nth-child(13) {
+    display: block;
+} 
+
+
+}
+
+// iphone 6  portrait
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : portrait) { 
+
+    .box {
+        width: calc(100%/3);
+        height: 20%;
+        }
+
+.box:nth-child(15) {
+    display: block;
+}
+.box:nth-child(14) {
+    display: block;
+} 
+.box:nth-child(13) {
+    display: block;
+} 
+
+}
+
+// iphone 5  portrait
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+and (orientation : portrait) { 
+
+    .box {
+        width: calc(100%/3);
+        height: 20%;
+        }
+.box:nth-child(15) {
+    display: block;
+}
+.box:nth-child(14) {
+    display: block;
+} 
+.box:nth-child(13) {
+    display: block;
+} 
+}
+
+// iphone 4 portrait
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) 
+and (orientation : portrait) { 
+
+    .box {
+        width: calc(100%/3);
+        height: 20%;
+        }
+.box:nth-child(15) {
+    display: block;
+}
+.box:nth-child(14) {
+    display: block;
+} 
+.box:nth-child(13) {
+    display: block;
+} 
+}
+
+@media only screen and (max-width: 960px) {
+ .swiper-wrapper_page {font-size:1.4em !important; }
+ .swiper-wrapper_page {
+             overflow-y: scroll;
+
+
+}
+ .lineup ul li{ font-size: 1.5em; }
+.swiper-container { width: 90%; }
+#header { display: none; }
+#footer { width:10%;}
+#toggle-menu_footer {display:block;}
+.close_menu {width:13%;}
+#topmenu_overlay ul li a {font-size:20px;}
+
+}
+
+@media only screen and (max-width: 700px) {
+ .lineup ul li{ font-size: 2em; }
+ .box li { font-size: 20px; line-height: 18px; padding-top: -2%; }
+ .box { padding-top: 2%; }
+
+}
+
+
