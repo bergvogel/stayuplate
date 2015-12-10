@@ -69,15 +69,15 @@ body {
 
 @font-face {
   font-family: 'neuzeit_condenced';
-  src: url("../font/neuzeit_condenced.eot");
-  src: url("../font/bneuzeit_condenced.eot?#iefix") format("embedded-opentype"), url("../font/neuzeit_condenced.woff") format("woff"), url("../font/neuzeit_condenced.ttf") format("truetype"), url("../font/neuzeit_condenced.svg#neuzeit_condenced") format("svg");
+  src: url("/wp-content/themes/modular/font/neuzeit_condenced.eot");
+  src: url("/wp-content/themes/modular/font/bneuzeit_condenced.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/modular/font/neuzeit_condenced.woff") format("woff"), url("/wp-content/themes/modular/font/neuzeit_condenced.ttf") format("truetype"), url("/wp-content/themes/modular/font/neuzeit_condenced.svg#neuzeit_condenced") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'neuzeit';
-  src: url("../font/neuzeit.eot");
-  src: url("../font/bneuzeit.eot?#iefix") format("embedded-opentype"), url("../font/neuzeit.woff") format("woff"), url("../font/neuzeit.ttf") format("truetype"), url("../font/neuzeit.svg#neuzeit") format("svg");
+  src: url("/wp-content/themes/modular/font/neuzeit.eot");
+  src: url("/wp-content/themes/modular/font/bneuzeit.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/modular/font/neuzeit.woff") format("woff"), url("/wp-content/themes/modular/font/neuzeit.ttf") format("truetype"), url("/wp-content/themes/modular/font/neuzeit.svg#neuzeit") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -602,11 +602,10 @@ button.swiper-pagination-bullet {
 #topmenu_overlay {
   height: 100%;
   width: 100%;
-  top: 0;
-  left: 0;
+  z-index: 100000;
   background: #000;
   position: absolute;
-  z-index: 10000;
+  z-index: 103300001;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -624,6 +623,7 @@ button.swiper-pagination-bullet {
   font-size: 15px;
   font-family: "neuzeit";
   text-transform: uppercase;
+  display: inline;
 }
 
 #topmenu_overlay ul li a {
@@ -634,7 +634,7 @@ button.swiper-pagination-bullet {
   position: absolute;
   top: 1px;
   right: 2px;
-  width: 6%;
+  width: 37px;
 }
 
 #headercontent {
@@ -649,11 +649,19 @@ button.swiper-pagination-bullet {
           align-items: center;
 }
 
-#nextevent {
+#newslist {
   height: auto;
   width: 100%;
   position: relative;
   left: 0%;
+}
+
+.nextevent {
+  height: auto;
+  width: 100%;
+  position: relative;
+  left: 0%;
+  margin-top: 21px;
 }
 
 .lineup {
@@ -676,7 +684,7 @@ button.swiper-pagination-bullet {
   height: 100%;
   position: absolute;
   top: 0px;
-  width: 100%;
+  width: 102%;
   left: -100%;
   background-color: #fff;
   display: -webkit-box;
@@ -688,7 +696,6 @@ button.swiper-pagination-bullet {
       -ms-flex-align: center;
           align-items: center;
   border: 7px;
-  border-right: 0px;
   border-color: #000;
   border-style: solid;
   z-index: 100000;
@@ -700,23 +707,19 @@ button.swiper-pagination-bullet {
   text-transform: uppercase;
   float: left;
   clear: left;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  font-size: 100%;
 }
 
 #topmenu ul li a:hover {
-  -webkit-transform: translate3d(3px, 2px, 0);
-          transform: translate3d(3px, 2px, 0);
+  -webkit-transform: translate3d(3px, 1px, 0);
+          transform: translate3d(3px, 1px, 0);
+  text-decoration: none;
 }
 
 #topmenu ul li {
   width: 100%;
-}
-
-#topmenu a:hover {
-  text-decoration: underline;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
 }
 
 #topmenu ul {
@@ -775,7 +778,7 @@ button.swiper-pagination-bullet {
 #toggle-menu span {
   display: block;
   width: 25px;
-  height: 3px;
+  height: 2px;
   background: #fff;
   position: absolute;
   -webkit-animation-fill-mode: forwards;
@@ -1053,6 +1056,21 @@ button.swiper-pagination-bullet {
             transform: rotate(135deg);
   }
 }
+.nexttitle {
+  text-transform: uppercase;
+  font-family: "neuzeit";
+  color: #fff;
+  top: -20px;
+  position: relative;
+}
+
+.nextdiv {
+  text-transform: uppercase;
+  font-family: "neuzeit";
+  color: #fff;
+  position: relative;
+}
+
 #main {
   height: 100%;
   width: 100%;
@@ -1061,7 +1079,7 @@ button.swiper-pagination-bullet {
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   position: relative;
-  background-image: url("../img/mod_logo.svg");
+  background-image: url("/wp-content/themes/modular/img/mod_logo.svg");
   z-index: 1000;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1076,7 +1094,7 @@ button.swiper-pagination-bullet {
   position: relative;
   top: 0px;
   left: 0px;
-  border: 4px solid #000;
+  border: 7px solid #000;
   box-sizing: border-box;
 }
 
@@ -1264,12 +1282,11 @@ button.swiper-pagination-bullet {
   right: 2%;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
-  width: 7%;
+  width: 40px;
   top: 2%;
 }
 
 .close:hover {
-  opacity: .6;
   -webkit-transform: rotate(90deg) translateZ(0);
           transform: rotate(90deg) translateZ(0);
 }
@@ -1289,6 +1306,10 @@ button.swiper-pagination-bullet {
   font-size: 33px;
   text-transform: uppercase;
   margin-top: 20px;
+}
+
+input#ninja_forms_field_8 {
+  color: #000;
 }
 
 .hidden {
@@ -1753,7 +1774,7 @@ button.swiper-pagination-bullet {
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   position: relative;
-  background-image: url("../img/mod_logo.svg");
+  background-image: url("/wp-content/themes/modular/img/mod_logo.svg");
   z-index: 1000;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1790,7 +1811,7 @@ button.swiper-pagination-bullet {
 }
 
 #social:hover {
-  opacity: 0.7;
+  opacity: 0.5;
 }
 
 #social {
@@ -1798,6 +1819,8 @@ button.swiper-pagination-bullet {
   margin: 0 auto;
   position: static;
   max-width: 30px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
@@ -1892,7 +1915,8 @@ button.swiper-pagination-bullet {
   }
 
   .swiper-container {
-    width: 90%;
+    width: 85%;
+    z-index: 2;
   }
 
   #header {
@@ -1900,19 +1924,22 @@ button.swiper-pagination-bullet {
   }
 
   #footer {
-    width: 10%;
+    width: 15%;
   }
 
   #toggle-menu_footer {
     display: block;
   }
 
-  .close_menu {
-    width: 13%;
+  #topmenu_overlay ul li a {
+    font-size: 24px;
   }
 
-  #topmenu_overlay ul li a {
-    font-size: 20px;
+  .close_menu {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    width: 37px;
   }
 }
 @media only screen and (max-width: 700px) {

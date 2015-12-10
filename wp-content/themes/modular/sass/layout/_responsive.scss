@@ -106,17 +106,19 @@ and (orientation : portrait) {
  .swiper-wrapper_page {font-size:1.4em !important; }
  .swiper-wrapper_page {
              overflow-y: scroll;
-
-
 }
  .lineup ul li{ font-size: 1.5em; }
-.swiper-container { width: 90%; }
+.swiper-container { width: 85%;z-index:2; }
 #header { display: none; }
-#footer { width:10%;}
+#footer { width:15%;}
 #toggle-menu_footer {display:block;}
-.close_menu {width:13%;}
-#topmenu_overlay ul li a {font-size:20px;}
-
+#topmenu_overlay ul li a {font-size:24px;}
+.close_menu {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    width: 37px;
+}
 }
 
 @media only screen and (max-width: 700px) {

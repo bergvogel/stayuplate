@@ -4,8 +4,10 @@ $(function(){
   var $page = $('#main'),
       options = {
   
+  prefetch: true,
+            pageCacheSize: 4,
         onStart: {
-          duration: 300, // Duration of our animation
+          duration: 250, // Duration of our animation
           render: function ($container) {
             // Add your CSS animation reversing class
             $container.addClass('is-exiting');
@@ -25,3 +27,5 @@ $(function(){
       },
       smoothState = $page.smoothState(options).data('smoothState');
 });
+
+

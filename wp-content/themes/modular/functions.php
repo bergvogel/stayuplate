@@ -33,22 +33,22 @@ function slider_post_type(){
 }
 
 
-add_action( 'init', 'slider_post_type2' );
+// add_action( 'init', 'slider_post_type2' );
 
-function slider_post_type2(){
-  $OurMenu_args = array(
-    'label' => __('smaakmarkt'),
-    'singular_label' => __('smaakmarkt'),
-    'public'  =>  true,
-    'show_ui' =>  true,
-    'capability_type' =>  'post',
-    'hierarchical'  =>  false,
-    'rewrite' =>  true,
+// function slider_post_type2(){
+//   $OurMenu_args = array(
+//     'label' => __('smaakmarkt'),
+//     'singular_label' => __('smaakmarkt'),
+//     'public'  =>  true,
+//     'show_ui' =>  true,
+//     'capability_type' =>  'post',
+//     'hierarchical'  =>  false,
+//     'rewrite' =>  true,
 
-    'supports'  =>  array('title', 'editor','page-attributes','thumbnail')
-    );
-    register_post_type('smaakmarkt', $OurMenu_args);
-}
+//     'supports'  =>  array('title', 'editor','page-attributes','thumbnail')
+//     );
+//     register_post_type('smaakmarkt', $OurMenu_args);
+// }
 
 
 remove_action( 'ninja_forms_display_css', 'ninja_forms_display_css');

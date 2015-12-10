@@ -36,9 +36,9 @@
 
       /** jQuery selector to specify which anchors smoothState should bind to */
       anchors: 'a',
-	  
-	  /** Regex to specify which anchor's with a specific href value based on the regex smoothState should bind to. If empty, every href will be permitted. */
-	  hrefRegex: '',
+
+      /** Regex to specify which href smoothState should load. If empty, every href will be permitted. */
+      hrefRegex: '',
 
       /** jQuery selector to specify which forms smoothState should bind to */
       forms: 'form',
@@ -176,8 +176,18 @@
        */
       shouldLoadAnchor: function ($anchor, blacklist, hrefRegex) {
         var href = $anchor.prop('href');
-        // URL will only be loaded if it's not an external link, hash, or blacklisted
-        return (!utility.isExternal(href) && !utility.isHash(href) && !$anchor.is(blacklist) && !$anchor.prop('target')) && (typeof hrefRegex === undefined || hrefRegex === '' || $anchor.prop('href').search(hrefRegex) !== -1);
+        // URL will only be loaded if it's not an external link, hash, or
+        // blacklisted
+        return (
+            !utility.isExternal(href) &&
+            !utility.isHash(href) &&
+            !$anchor.is(blacklist) &&
+            !$anchor.prop('target')) &&
+            (
+              typeof hrefRegex === undefined ||
+              hrefRegex === '' ||
+              $anchor.prop('href').search(hrefRegex) !== -1
+            );
       },
 
       /**
@@ -480,7 +490,7 @@
                       clear(settings.url);
                     }
                   });
-                } 
+                }
                 else if (callbBackEnded) {
                   updateContent(settings.url);
                 }
@@ -580,7 +590,7 @@
           // Ctrl (or Cmd) + click must open a new tab
           var $anchor = $(event.currentTarget);
           if (!event.metaKey && !event.ctrlKey && utility.shouldLoadAnchor($anchor, options.blacklist, options.hrefRegex)) {
-              
+
             // stopPropagation so that event doesn't fire on parent containers.
             event.stopPropagation();
             event.preventDefault();

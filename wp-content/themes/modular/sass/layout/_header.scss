@@ -17,12 +17,11 @@
 #topmenu_overlay {
     height: 100%;
     width: 100%;
-    top:0;
-    left: 0;
+   z-index: 100000;
     background: #000;
     position: absolute;
-    z-index: 10000;
-      display: flex;   
+    z-index: 103300001;
+    display: flex;  
     align-items: center;
 }
 
@@ -33,6 +32,8 @@
     font-size: 15px;
     font-family: $primary_font;
     text-transform: uppercase;
+    display: inline;  
+
 }
 
 #topmenu_overlay ul li a {
@@ -42,7 +43,7 @@ color: #fff;
     position: absolute;
     top: 1px;
     right: 2px;
-    width: 6%;
+    width: 37px;
 }
 #headercontent {
     height: 100%;
@@ -51,11 +52,19 @@ color: #fff;
 
 }
 
-#nextevent {
+#newslist {
     height: auto;
     width: 100%;
     position:relative;
     left: 0%;
+}
+
+.nextevent {
+    height: auto;
+    width: 100%;
+    position:relative;
+    left: 0%;
+  margin-top: 21px;
 }
 
 .lineup {
@@ -78,7 +87,7 @@ color: #fff;
     height: 100%;
     position: absolute;
     top: 0px;
-    width: 100%;
+    width: 102%;
     // transition: 1s ease;
     left: -100%;
     background-color: $white;
@@ -86,10 +95,12 @@ color: #fff;
         display: flex;   
     align-items: center;
     border: 7px;
-    border-right: 0px;
+    // border-right: 0px;
     border-color:#000;
     border-style: solid;
     z-index: 100000;
+
+
 }
 
 
@@ -99,11 +110,14 @@ color: #fff;
     text-transform: uppercase;  
     float: left;
     clear: left;
-    transition: all 0.3s ease-in-out;
+    transition: 0.2s ease-in-out;
+    font-size: 100%;
+
 }
 
 #topmenu ul li a:hover {
-transform: translate3d(3px, 2px, 0);
+transform: translate3d(3px, 1px, 0);
+text-decoration:none;
 
 }
 
@@ -111,11 +125,7 @@ transform: translate3d(3px, 2px, 0);
     width: 100%;
 }
 
-#topmenu a:hover{
-   text-decoration: underline;
-    transition: all .3s ease-in-out;
- 
-}
+
 
 #topmenu ul{
 margin: 0 3px 0 7%;
@@ -176,7 +186,7 @@ margin: 0 3px 0 7%;
 #toggle-menu span {
     display: block;
     width: 25px;
-    height: 3px;
+    height: 2px;
     background: $white;
     position: absolute;
  
@@ -366,7 +376,24 @@ margin: 0 3px 0 7%;
 
 
 
+.nexttitle {
+    text-transform: uppercase;
+    font-family: $primary_font;
+    color: $white;
+    top: -20px;
+    position: relative;
+}
 
+
+
+
+.nextdiv {
+    text-transform: uppercase;
+    font-family: $primary_font;
+    color: $white;
+
+    position: relative;
+}
 
 
 

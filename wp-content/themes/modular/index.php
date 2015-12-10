@@ -2,7 +2,6 @@
     <div class="swiper-container swiper-container-v Slideup">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-
                   <div id="slide_wrapper">
                  <div id="arrowdown"><div id="arrl"></div>
                   <div id="arrr"></div></div>
@@ -16,7 +15,7 @@
                        <span class="box" data-swiper-parallax="-300" data-swiper-parallax-duration="400">A</span>
                        <span class="box" data-swiper-parallax="-300" data-swiper-parallax-duration="400">R</span>
                        <span class="box" data-swiper-parallax="-300" data-swiper-parallax-duration="500"></span>
-                       <span class="box" data-swiper-parallax="-300" data-swiper-parallax-duration="500">2</span>
+                       <span class="box" data-swiper-parallax="-300" data-swiper-parallax-duration="500">1</span>
                        <span class="box" data-swiper-parallax="-300" data-swiper-parallax-duration="500">9</span>
                        <span class="box" data-swiper-parallax="-300" data-swiper-parallax-duration="700">-</span>
                        <span class="box" data-swiper-parallax="-300" data-swiper-parallax-duration="700">2</span>
@@ -24,6 +23,7 @@
                      <ul>
                      <li>Barnt</li>
                     <li>Bicep</li>
+                    <li>Octave One live</li>
                     </ul>
                        </span>
                        <span class="box" data-swiper-parallax="-300" data-swiper-parallax-duration="700"></span>
@@ -35,11 +35,9 @@
                        </span>
                 </div>      </div>
             </div>
-
           <div class="swiper-slide">
                   <div id="slide_wrapper">
                   <div class="wrapper_box">
-
                        <span class="box"data-swiper-parallax="-300" data-swiper-parallax-duration="300">F</span>
                        <span class="box"data-swiper-parallax="-300" data-swiper-parallax-duration="300">A</span>
                        <span class="box"data-swiper-parallax="-300" data-swiper-parallax-duration="300">C</span>
@@ -63,16 +61,6 @@
                      </ul></span>
                 </div>      </div>
             </div>
-  
-  
-
-          </div>
         </div>
-
-
-   
-
-
-
-
+      </div>
 <?php get_footer(); ?>

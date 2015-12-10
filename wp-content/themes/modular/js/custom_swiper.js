@@ -7,18 +7,6 @@
         keyboardControl: true,
         mousewheelControl: true,
         watchSlidesProgress: true,
-      wrapperClass: 'swiper-wrapper',
-      slideVisibleClass: 'slide-visible',
       loop:'true',
-      autoplay: 2000,
-    
-            draggable: true
-        
+      autoplay: 4000        
       });
-
-
-function fixSwiperForIE(swiper) {
-    setTimeout(function () {
-        swiper.onResize();
-    });
-}

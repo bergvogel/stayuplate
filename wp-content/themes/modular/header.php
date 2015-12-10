@@ -16,7 +16,7 @@
     <link rel='shortcut icon' type='image/x-icon' href='<?bloginfo('template_url');?>/favicon.ico' />
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
     <title><?php wp_title(''); ?></title>
-
+<link href='https://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
    <!-- CSS -->
     <link rel="stylesheet" href="<?bloginfo('template_url');?>/css/foundation.css">
     <link rel="stylesheet" href="<?bloginfo('template_url');?>/css/app.css">
@@ -29,10 +29,8 @@
  <script src="<?bloginfo('template_url');?>/js/flowtype.js"></script>
 
     </head>
-<body style="">
-
-<div id="main" class="m-scene">
-   <div id="topmenu_overlay" style="display:none;">
+<body>
+<div id="topmenu_overlay" style="display:none;">
     <ul>
         <li class="page_item"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">HOME</a></li>
         <?php wp_list_pages('sort_column=post_date&title_li='); ?>
@@ -40,6 +38,8 @@
    <img class="close_menu" src="<?bloginfo('template_url');?>/img/close.png">    
 
 </div>
+<div id="main" class="m-scene">
+   
 
     <div id="header">
    
@@ -61,8 +61,9 @@
        
 
     <div id="headercontent">
-        <div id="nextevent">
+        <div id="newslist">
              <div class="lineup">
+                <h2 class="nexttitle">next event:</h2>
                 <ul>
                     <li>Barnt</li>
                     <li>Bicep</li>
@@ -71,10 +72,17 @@
                     <li>Midland</li>
                     <li>Modular DJ's</li>
                     <li>Oceanic & Woody</li>
+                    <li>Octave One live</li>
                     <li>ROD</li>  
                 </ul>
+                 <div class="nextevent">
+                <h2 class="nextdiv">19-02-2016</h2>
+                <h2 class="nextdiv">Modular Factory Edition</h2>
             </div>
+            </div>
+              
         </div>
+
     </div>
        
 <!--         <img id="stoofpot_logo" src="<?bloginfo('template_url');?>/img/pastedsvg%202.svg" class="image" />
