@@ -13,19 +13,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <title><?php wp_title( '|', true, 'right' ); ?></title>
+    <link rel='shortcut icon' type='image/x-icon' href='<?php echo esc_url( get_template_directory_uri() ); ?>/favicon.ico' />
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
     <title><?php wp_title(''); ?></title>
 <link href='https://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
    <!-- CSS -->
-    <link rel="stylesheet" href="<?bloginfo('template_url');?>/css/foundation.css">
-    <link rel="stylesheet" href="<?bloginfo('template_url');?>/css/app.css">
+    <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/foundation.css">
+    <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/app.css">
 
 
 
 
 
  <?php wp_head(); ?>
- <script src="<?bloginfo('template_url');?>/js/flowtype.js"></script>
+ <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/flowtype.js"></script>
 
     </head>
 <body>
@@ -34,7 +35,7 @@
         <li class="page_item"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">HOME</a></li>
         <?php wp_list_pages('sort_column=post_date&title_li='); ?>
     </ul>
-   <img class="close_menu" src="<?bloginfo('template_url');?>/img/close.png">    
+   <img class="close_menu" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/close.png">    
 
 </div>
 <div id="main" class="m-scene">
@@ -84,7 +85,7 @@
 
     </div>
        
-<!--         <img id="stoofpot_logo" src="<?bloginfo('template_url');?>/img/pastedsvg%202.svg" class="image" />
+<!--         <img id="stoofpot_logo" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/pastedsvg%202.svg" class="image" />
  -->       
     </div>
          
