@@ -13,7 +13,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <title><?php wp_title( '|', true, 'right' ); ?></title>
-    <link rel='shortcut icon' type='image/x-icon' href='<?bloginfo('template_url');?>/favicon.ico' />
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
     <title><?php wp_title(''); ?></title>
 <link href='https://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
